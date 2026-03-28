@@ -26,7 +26,7 @@ async function getLootData(lootUrl) {
 
     const browser = await puppeteer.launch({
     headless: "new",
-    executablePath: process.env.PUPPETEER_EXECUTABLE_PATH || undefined,
+    executablePath: process.env.PUPPETEER_EXECUTABLE_PATH || '/opt/render/.cache/puppeteer/chrome/linux-127.0.6533.88/chrome-linux64/chrome',
     args: [
         '--no-sandbox',
         '--disable-setuid-sandbox',
